@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: antiquewhite;
+        }
+        /**
+            Class (sınıf) seçiciler.
+                css de nokta (.) ile kodlanır.
+                Ortak kullanım amaçlıdır.
+                Etikete birden fazla css ekleyebiliriz.
+        **/
+        .bg-color{
+            color: rgb(18, 116, 88);
+        }
+        /**
+            ID seçiciler.
+                css de # ile kodlanır
+                sadece bir tane kullanılabilir.
+        **/
+        #font24{
+            font-size: 14px;
+        }
+        #fontBold{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="bg-color" id="font24">Lorem ipsum dolor sit amet.</h1>
+        </section>
+        <section>
+            <p class="bg-color" id="fontBold">Dolores, excepturi! Laudantium, sequi nihil.</p>
+        </section>
+    </main>
+</body>
+</html>
