@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /**
+                css öncelikleri aşağıya doğru şu şekildedir.
+                    style   inline css -- etiket için verilen değer her zaman baskındır.
+                    #       id selector
+                    .       class selector
+                    h1 vs   tag selector
+                            tarayıcı standartları  -- en az baskın olan.
+            **/
+
+            /** '*'' işareti ile tüm etiketlere css özelliği atanır. **/
+            *{
+                text-align: right; /*yazıları sağa yanaştırdık*/
+                font-size: 35px;
+            }
+
+            #bg-color{
+                background-color: bisque;
+            }
+
+            .bg-aqua{
+                background-color: aqua;
+            }
+            p{
+                font-size: 30px !important; /** söz diziminin sonuna '!important' eklenirse; bundan sonra baskın şekilde gelen aynı kodlar bu kodu devre dışı bırakamaz, her zaman bu kod geçerli olur. **/
+            }
+            .font45 {
+                font-size: 45px ;
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="bg-aqua" id="bg-color" style="text-align:center;">Lorem ipsum dolor sit amet.</h1>
+        </section>
+        <section>
+            <p class="bg-aqua font45" id="bg-color">Dolores, excepturi! Laudantium, sequi nihil.</p>
+        </section>
+    </main>
+</body>
+</html>
