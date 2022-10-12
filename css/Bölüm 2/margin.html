@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        *{
+            margin:0;
+        }
+        /*
+            margin: dış boşluk vermemizi sağlar.
+        */
+        #section1{
+            background-color: bisque;
+            margin: 25px; /* yukarı sağ aşağı sol dan aynı anda değer verir */
+        }
+        #section2{
+            background-color:aquamarine;
+            margin: 25px 30px 45px 15px; /* yukarı sağ aşağı sol aynı anda farklı değerler*/
+        }
+        #section3{
+            background-color:blueviolet;
+            margin-top: 35px;  /* tek tek verebilmekte mümkün :) */
+            margin-right: 40px;
+            margin-bottom: 25px;
+            margin-left: 22px;
+        }
+        #section4{
+            background-color: antiquewhite;
+            margin: 0 auto;    
+            /* auto : sağdan ve soldan kalan boşlukları ikiye bölüp otomatik ayarlar.*/
+            /* yanına sıfır koyarsak sadece yukarıdan ve aşağıdan 0 veya başka bir değer atar.*/
+            width: 500px;
+        }
+        #section5{
+            background-color: #fdaf;
+            margin: 25px 60px; /* yukarı ve aşağı - sağ ve sol değerleri */
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section id="section1">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        </section>
+        <section id="section2">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </section>
+        <section id="section3">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </section>
+        <section id="section4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo harum ducimus dicta delectus? Voluptatum!</p>
+        </section>
+        <section id="section5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+    </main>
+
+</body>
+</html>
