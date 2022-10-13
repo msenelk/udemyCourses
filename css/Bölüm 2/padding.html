@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        *{
+            margin:5px;
+            padding: 0;
+        }
+        /*
+            padding: iç boşluk vermemizi sağlar. İçerik hareket eder.
+        */
+        #section1{
+            background-color: bisque;
+            padding: 25px; /* yukarı sağ aşağı sol dan aynı anda değer verir */
+        }
+        #section2{
+            background-color:aquamarine;
+            padding: 25px 30px 45px 15px; /* yukarı sağ aşağı sol aynı anda farklı değerler*/
+        }
+        #section3{
+            background-color:blueviolet;
+            padding-top: 35px;  /* tek tek verebilmekte mümkün :) */
+            padding-right: 40px;
+            padding-bottom: 25px;
+            padding-left: 22px;
+        }
+
+        #section4{
+            background-color: #fdaf;
+            padding: 25px 60px; /* yukarı ve aşağı - sağ ve sol değerleri */
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section id="section1">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        </section>
+        <section id="section2">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </section>
+        <section id="section3">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        </section>
+        <section id="section4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo harum ducimus dicta delectus? Voluptatum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestias ducimus maxime ut aut, minima fuga nisi autem voluptates magnam?</p>
+        </section>
+    </main>
+
+</body>
+</html>
