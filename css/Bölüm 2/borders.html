@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        section{
+            padding: 8px;
+            margin: 6px;
+        }
+        /* border: kenarlık vermemizi sağlar.
+                borders: çizgi kalınlığı (px) - çizgi tipi - çizgi rengi
+                    olmak üzere üç değerden oluşur.
+        */
+        .section1{
+            border: 10px solid blanchedalmond; /*tek seferde dört köşeye kenarlık vermek için kullanılır. */
+        }
+        .section2{
+            border-width: 8px; /*dört köşeye çizgi kalınlığı atar*/
+            border-style: dashed; /*dört köşeye çizgi tipi atar*/
+            border-color: aquamarine; /*dört köşeye renk atar*/
+        }
+        .section3{
+            /*top: yukarı, right: sağ, bottom: aşağı, left: sol*/
+
+            border-left-width: 8px; /*tek bir kenara çizgi kalınlığı atar*/
+            border-left-style: dotted; /*tek bir kenara çizgi tipi atar*/
+            border-left-color: aquamarine; /*tek bir kenara renk atar*/
+            border-top-width: 10px;
+            border-top-style: double;
+            border-top-color: aquamarine;
+            border-right-width: 10px;
+            border-right-style: groove;
+            border-right-color: aquamarine;
+            border-bottom-width: 10px;
+            border-bottom-style: outset;
+            border-bottom-color: aquamarine;
+        }
+        div{
+            margin: 5px;
+            padding-top: 30px;
+            background-color: blanchedalmond;
+            height: 50px;
+            width: 130px;
+            float: left;
+            text-align: center;
+        }
+        .dotted {border-style: dotted;}
+        .dashed {border-style: dashed;}
+        .solid {border-style: solid;}
+        .double {border-style: double;}
+        .groove {border-style: groove;}
+        .ridge {border-style: ridge;}
+        .inset {border-style: inset;}
+        .outset {border-style: outset;}
+        .none {border-style: none;}
+        .hidden {border-style: hidden;}
+        .mix {border-style: dotted dashed solid double;}
+       
+        /* border-radius: köşeler yuvarlar
+        
+        */
+        .section4{
+            margin:5px;
+            background-color: bisque;
+            height: 50px;
+            width: 130px;
+            border-radius: 10px; /* dört köşeyi aynı ölçüde yuvarlar. */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        </section>
+        <section class="section2">
+            <h1>Incidunt nemo totam quo libero asperiores.</h1>
+        </section>
+        <section class="section3">
+            <h1>Voluptas molestiae nulla beatae optio tempora.</h1>
+        </section>
+    </main>
+        <div class="dotted">dotted</div>
+        <div class="dashed">dashed</div>
+        <div class="solid">solid</div>
+        <div class="double">double</div>
+        <div class="groove">groove</div>
+        <div class="ridge">ridge</div>
+        <div class="inset">inset</div>
+        <div class="outset">outset</div>
+        <div class="none">none</div>
+        <div class="hidden">hidden</div>
+        <div class="mix">mix</div>
+
+    <div class="section4">Border-Radius</div>
+
+</body>
+</html>
