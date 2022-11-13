@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 60px;
+            display: inline-block;
+        }
+        #first{background-color: red; visibility: hidden;}  /*elaman kaybolur ama genişlik ve yükseklik aynı kalır*/
+        #second{background-color: blanchedalmond;} 
+        #third{background-color: yellow; display: none;} /*elaman kaybolur ve yanındaki elamanlar sola kayar.*/
+        #fourth{background-color: green;}
+        a{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box" id="first">first</div>
+    <div class="box" id="second">second</div>
+    <div class="box" id="third">third</div>
+    <div class="box" id="fourth">fourth</div>
+</div>
+
+<br>
+<div class="box" style="background-color: red;">first</div>
+    <div class="box" style="background-color: blanchedalmond;">second</div>
+    <div class="box" style="background-color: yellow;">third</div>
+    <div class="box" style="background-color: green;">fourth</div>
+</body>
+</html>
