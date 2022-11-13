@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .card1{
+            box-sizing: border-box; /* bu özellik padding, border değerlerinin kapladığı alanları hesaba katmaz */
+            height: 350px;
+            width: 100%;
+            background-color: #fc9979;
+            
+        }
+        .main-header{
+            background-color: #a1e13c;
+            padding: 4px;
+        }
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 85px); /* toplam boyuttan 85px çıkarılarak öğenin with hesabı tarayıcıya iletilir */
+            text-align: right; /*metni sağa yaslar*/
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="#">MovieApp</a>
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="card1">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>    
+    </div>
+</body>
+</html>
