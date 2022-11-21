@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*etiketin ilk satırına etki eder.*/
+        p::first-line{
+            color:red;
+            word-spacing: 3px; /*kelimeler arası boşluk*/
+            letter-spacing: 1px; /*harfler arası boşluk*/
+        }  
+
+        /*etiketin ilk harfine etki eder*/
+        p.about::first-letter{
+            font-size: 25px;
+        }
+
+        /*tüm bölgede mouse ile seçilen yazıya etki eder.*/
+        ::selection{
+            color:hotpink;
+        }
+
+        /*etiketin başına content ile veri eklenir*/
+        p::before{
+            content: "--";
+        }
+
+        /*etiketin sonuna content ile veri eklenir*/
+        p::after{
+            content: "\2764"; /*emojilerin HEX karşılığını alıp başına \ koymamız yeterli olur.*/ 
+            /*https://www.w3schools.com/charsets/ref_emoji.asp*/
+        }
+    </style>
+</head>
+<body>
+    <!--Pseudo Elements-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae quaerat nam corporis nulla iste?</p>
+
+    <p class="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, labore. Unde architecto quis eius. Accusantium itaque corporis perferendis?</p>
+</body>
+</html>
