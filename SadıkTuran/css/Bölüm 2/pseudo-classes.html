@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            border: 1px solid gray;
+            padding: 5px 8px;
+            display: inline-block;
+            text-decoration: none;
+            width: 65px;
+            text-align: center;
+        }
+        /*
+            sıralama link, visited, hover, active şeklinde olmalıdır.
+        */
+        a:link{
+            /* açılmamış bir linkin css özelliğini tanımlar. */
+            color: red;
+        }
+
+        a:visited{
+            /* açılmış bir linkin css özelliğini tanımlar. */
+            color: green;
+        }
+        a:hover{
+            /* farenin a üzerine geldiğinde oluşacak css özelliğini tanımlar. */
+            color: rgb(172, 23, 23);
+            background-color: yellow;
+        }
+        a:active{
+            /* a linkine tıklanıldığı anda oluşacak css özelliğini tanımlar. */
+            color: bisque;
+            background-color: black;
+        }
+        a:focus{
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Classes | Sahte Sınıflar-->
+        <a href="https://www.google.com">Home</a>
+        <a href="https://www.twitter.com">Products</a>
+        <a href="https://www.facebook.com">About</a>
+
+</body>
+</html>
