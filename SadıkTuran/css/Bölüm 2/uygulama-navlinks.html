@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .card1{
+            box-sizing: border-box; /* bu özellik padding, border değerlerinin kapladığı alanları hesaba katmaz */
+            height: 350px;
+            width: 100%;
+            background-color: #fc9979;
+            
+        }
+        .main-header{
+            background-color: #a1e13c;
+            padding: 8px 16px;
+        }
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 99px); /* toplam boyuttan 85px çıkarılarak öğenin with hesabı tarayıcıya iletilir */
+            text-align: right; /*metni sağa yaslar*/
+        }
+        .main-nav__items{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .main-nav__item{
+            display: inline-block;
+            margin: 0 10px;
+            
+        }
+        .main-nav__item a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-nav__item a:hover{
+            color: #2E4C6D;
+        }
+        .main-header__logo{
+            color: antiquewhite;
+            text-decoration: none;
+            font-size:21px;
+        }
+        .main-nav__item a:active{
+            color:#fff;
+        }
+        .main-nav__item::before{
+            content: "\2022";
+            color: #fff;
+        }
+        .main-nav__item:hover::before{
+            color: #2E4C6D;
+        }
+        .main-nav__item:active::before{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="#">Movies</a></li>
+                <li class="main-nav__item"><a href="#">Contact</a></li>
+            </ul>
+   
+        </nav>
+    </header>
+
+    <div class="card1">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>    
+    </div>
+</body>
+</html>
