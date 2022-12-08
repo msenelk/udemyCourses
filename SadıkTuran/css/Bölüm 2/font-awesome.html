@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" /> <!--kütüphane yönlendirmesi.-->
+    <style>
+        *{
+            margin: 0;
+        }
+        .card1{
+            box-sizing: border-box;
+            height: 650px;
+            width: 100%;
+            background-image: url(home-bg.jpeg);
+            background-position: center left;
+
+            background-repeat: no-repeat;
+        }
+        .main-header{
+            background-color: #a1e13c;
+            padding: 8px 16px;
+        }
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 99px);
+            text-align: right;
+        }
+        .main-nav__items{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .main-nav__item{
+            display: inline-block;
+            margin: 0 10px;
+            
+        }
+        .main-nav__item a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-nav__item a:hover{
+            color: #2E4C6D;
+        }
+        .main-header__logo{
+            color: antiquewhite;
+            text-decoration: none;
+            font-size:21px;
+        }
+        .main-nav__item a:active{
+            color:#fff;
+        }
+        .main-nav__item::before{
+            content: "\2022";
+            color: #fff;
+        }
+        .main-nav__item:hover::before{
+            color: #2E4C6D;
+        }
+        .main-nav__item:active::before{
+            color: #fff;
+        }
+
+        .main-nav__item-login a{
+            color: #fff;
+            background-color: #2E4C6D ;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+        .main-nav__item-login::before{
+            content: none;
+            color: #fff;
+        }
+        .main-nav__item-login a:hover{
+            color:#2E4C6D;
+            background-color: #fff;
+            border: 2px solid #2E4C6D;
+        } 
+        .card2{
+            margin-top: 5px;
+            text-align: center;
+        }
+        .alt__uclu{
+            height: 250px;
+            width: 100%;
+            margin-bottom: 30px;
+            
+        }
+        .alt__uclu_bolum{
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .card2 h3{
+            font-size: 30px;
+            color:#3e4555;
+            
+        }
+    
+        .card2 i{
+            color: #fc997C;
+        }
+            
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#">Filmler</a></li>
+                <li class="main-nav__item"><a href="#">Diziler</a></li>
+                <li class="main-nav__item main-nav__item-login"><a href="#">Login</a></li>
+            </ul>
+   
+        </nav>
+    </header>
+
+    <div class="card1">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>    
+    </div>
+
+    <div class="card2">
+        <h2>How it Works?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quae?</p>
+        <div class="alt__uclu">
+            <nav class="alt__uclu_bolum">
+                <i class="fa-solid fa-right-to-bracket fa-3x"></i> <!--ıcon eklemesi -->
+                <h3 class="alt_uclu_baslik">Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nihil iste modi repellendus ratione voluptate!</p>
+            </nav>
+            <nav class="alt__uclu_bolum">
+                <i class="fa-brands fa-buffer fa-3x"></i>
+                <h3 class="alt_uclu_baslik">Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nihil iste modi repellendus ratione voluptate!</p>
+            </nav>
+            <nav class="alt__uclu_bolum">
+                <i class="fa-regular fa-face-grin-squint-tears fa-3x"></i>
+                <h3  class="alt_uclu_baslik">Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nihil iste modi repellendus ratione voluptate!</p>
+            </nav>
+    
+        </div>
+    
+    
+    </div>
+
+    
+</body>
+</html>
