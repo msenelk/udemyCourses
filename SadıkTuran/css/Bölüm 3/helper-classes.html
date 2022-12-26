@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*buton oluşturken ortak etkenler: Yazıyı ortalamak, al çizgiyi kaldırmak, display:inline-block özelliğini vermek, padding ve border none olması. kenarları yuvarlamak için border radius tercih meselesi*/
+        .btn{
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 7px 15px;          
+            border:none;
+            border-radius: 3px;
+        }
+
+        .btn-primary{
+            background: #fc997c;
+            color: #fff;
+            border:1px solid #fc997c;
+        }
+
+        .btn-primary:hover{
+            background: #fff;
+            color: #fc997c;
+            border:1px solid #fc997c;
+        }
+        .btn-outline-primary{
+            background: #fff;
+            color: #fc997c;
+            border:1px solid #fc997c;
+        } 
+        .btn-outline-primary:hover{
+            background: #fc997c;
+            color: #fff;
+            border:1px solid #fc997c;
+        } 
+
+        .btn-secondary{
+            background: #227C70;
+            color: #fff;
+            border:1px solid #227C70;
+        }
+        .btn-secondary:hover{
+            background: #fff;
+            color: #227C70;
+            border:1px solid #227C70;
+        }
+        .btn-outline-secondary{
+            background: #fff;
+            color: #227C70;
+            border:1px solid #227C70;
+
+        }
+        .btn-outline-secondary:hover{
+            background: #227C70;
+            color: #fff;
+            border:1px solid #227C70;
+
+        }
+    </style>
+</head>
+<body>
+    <a class="btn btn-primary" href="">Button</a>
+    <a class="btn btn-secondary" href="">Button</a>
+
+    <br><br>
+
+    <a class="btn btn-outline-primary" href="">Button 2</a>
+    <a class="btn btn-outline-secondary" href="">Button 2</a>
+</body>
+</html>
