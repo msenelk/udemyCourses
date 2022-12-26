@@ -6,6 +6,7 @@
             padding: 7px 15px;          
             border:none;
             border-radius: 3px;
+            transition: .4s; /*tüm butuon geçişleri için süre verildi.*/
         }
 
         .btn-primary{
