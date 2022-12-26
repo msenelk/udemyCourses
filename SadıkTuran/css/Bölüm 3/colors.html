@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 150px;
+            border: 1px solid #888888;
+            margin: 10px;
+        }
+
+        .box1{
+            background: rgba(255,0,0,.5); /*renk tanımlaması rgba olarak yapılırsa en sonda noktalı şekilde saydamlık verilir.*/
+            /*opacity: .6;*/
+            transition-property: opacity;
+            transition-duration: .4;
+        }
+        .box1:hover{
+            background: rgba(255,0,0,.8); 
+        }
+        .box2{
+            background: rgb(0,255,0);
+            opacity: .2; /*saydamlık verir.*/
+            transition: opacity .5;
+        }
+        .box2:hover{
+            background: rgb(0,255,0);
+            opacity: .7; /*saydamlık verir.*/
+        }
+        .box3{
+            background: rgb(0,0,255);
+            opacity: .1;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
